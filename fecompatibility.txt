@@ -1,6 +1,7 @@
 if game:GetService("RunService"):IsClient() then error("Please run as a server script. Use h/ instead of hl/.")end;print("FE Compatibility by WaverlyCole & Fireboltofdeath");print("https://github.com/WaverlyCole/FE-Compatibility-VoidSb-")
 local Wrapper = {};Wrapper.Fake = {};Wrapper.Real = {};Wrapper.Data = {};
-local sGame = game;local sScript = script;local sOwner = game.Players["pedro64m"];local sInstance = Instance;local sLoadLibrary = LoadLibrary
+local owner = game.Players["pedro64m"]
+local sGame = game;local sScript = script;local sOwner = owner;local sInstance = Instance;local sLoadLibrary = LoadLibrary
 Wrapper.Event = Instance.new("RemoteEvent");Wrapper.Event.Name = "UserInput";
 Wrapper.CreateObject = function(connectionsrequested, index)
 	local connections = {}
